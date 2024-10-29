@@ -1,0 +1,25 @@
+def verificar_acesso(p, q, r):
+   
+    if (p and q) or r:
+        return "Acesso concedido"
+    else:
+        return "Acesso negado"
+
+
+senha_principal1 = "senha123"
+senha_principal2 = "acesso456"
+senha_extra = "extra789"
+
+
+entrada_p = input("Digite a primeira senha principal: ")
+entrada_q = input("Digite a segunda senha principal: ")
+entrada_r = input("Digite a senha extra: ")
+
+
+p_valido = entrada_p == senha_principal1
+q_valido = entrada_q == senha_principal2
+r_valido = entrada_r == senha_extra
+
+
+resultado = verificar_acesso(p_valido, q_valido, r_valido)
+print(resultado)
